@@ -1,0 +1,99 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.listContainer .listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+.listContainer .listWrapper .listSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.listContainer .listWrapper .listSearch .listSearchTitle {
+  font-size: 25px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.listContainer .listWrapper .listSearch .listSearchItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.listContainer .listWrapper .listSearch .listSearchItem label {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.listContainer .listWrapper .listSearch .listSearchItem .listSearchSpan {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.listContainer .listWrapper .listSearch .listSearchItem input, .listContainer .listWrapper .listSearch .listSearchItem .listSearchSpan {
+  outline: none;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.listContainer .listWrapper .listSearch .listSearchItem .date {
+  width: 100%;
+}
+.listContainer .listWrapper .listSearch .listSearchItem .date .rdrMonthAndYearWrapper {
+  padding: 10px 1px;
+}
+.listContainer .listWrapper .listSearch .listSearchItem .date .rdrMonthAndYearWrapper .rdrNextPrevButton {
+  margin: 0;
+}
+.listContainer .listWrapper .listSearch .listSearchItem .date .rdrMonths .rdrMonth {
+  width: calc(100% - 1.666em);
+}
+.listContainer .listWrapper .listSearch .listSearchOption {
+  padding: 10px;
+}
+.listContainer .listWrapper .listSearch .listSearchOption .listSearchOptionTitle {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.listContainer .listWrapper .listSearch .listSearchOption .listSearchOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 14px;
+  align-items: center;
+  /* .listSearchOptionText {
+      font-size: 12px;
+  } */
+}
+.listContainer .listWrapper .listSearch .listSearchOption .listSearchOptionItem .listItemOptionInput {
+  width: 50px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.listContainer .listWrapper .listSearch .searchBtn {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+.listContainer .listWrapper .listResult {
+  flex: 3;
+}/*# sourceMappingURL=list.css.map */

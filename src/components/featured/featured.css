@@ -1,0 +1,26 @@
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.featured .featuredItem {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  z-index: 1;
+}
+.featured .featuredItem .featuredTitles {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.featured .featuredItem .featuredImg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=featured.css.map */

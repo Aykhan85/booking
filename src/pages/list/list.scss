@@ -1,0 +1,120 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .listWrapper {
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        gap: 20px;
+
+
+        .listSearch {
+            flex: 1;
+            background-color: #febb02;
+            padding: 10px;
+            border-radius: 10px;
+            position: sticky;
+            top: 10px;
+            height: max-content;
+
+            .listSearchTitle {
+                font-size: 25px;
+                color: #555;
+                margin-bottom: 10px;
+            }
+
+            .listSearchItem {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 5px;
+
+                label {
+                    font-size: 15px;
+                    margin-bottom: 10px
+                }
+
+                .listSearchSpan {
+                    @extend input;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                input {
+
+                    outline: none;
+                    height: 30px;
+                    border: none;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                }
+
+                .date {
+                    width: 100%;
+
+                    .rdrMonthAndYearWrapper {
+                        padding: 10px 1px;
+
+                        .rdrNextPrevButton {
+                            margin: 0;
+                        }
+                    }
+
+                    .rdrMonths {
+                        .rdrMonth {
+                            width: calc(100% - 1.666em);
+                        }
+                    }
+                }
+            }
+
+            .listSearchOption {
+                padding: 10px;
+
+                .listSearchOptionTitle {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+
+                .listSearchOptionItem {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    color: #555;
+                    font-size: 14px;
+                    align-items: center;
+
+
+                    .listItemOptionInput {
+                        width: 50px;
+                        height: 30px;
+                        border: none;
+                        outline: none;
+                    }
+
+                    /* .listSearchOptionText {
+                        font-size: 12px;
+                    } */
+                }
+            }
+
+            .searchBtn {
+                padding: 10px;
+                background-color: #0071c2;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                width: 100%;
+                font-weight: bold;
+            }
+        }
+
+        .listResult {
+            flex: 3;
+        }
+    }
+}
